@@ -1,0 +1,19 @@
+my-wallet/
+├── package.json
+├── public/
+│   └── index.html
+└── src/
+    └── App.js
+import React, { useState, useEffect } from "react";
+
+export default function App() {
+  const [balance, setBalance] = useState(1000);
+  const [portfolio, setPortfolio] = useState({});
+
+  const [coins, setCoins] = useState([
+    { name: "Bitcoin", symbol: "BTC", price: 68000 },
+    { name: "Ethereum", symbol: "ETH", price: 3400 },
+    { name: "Solana", symbol: "SOL", price: 150 },
+  ]);
+
+  ...
